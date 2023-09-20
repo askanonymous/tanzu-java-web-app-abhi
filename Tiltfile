@@ -2,7 +2,7 @@ LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
 
 k8s_custom_deploy(
-    'tanzu-java-web-app-abhi',
+    'tanzu-java-web-app-default',
     apply_cmd="tanzu apps workload apply -f config/workload.yaml --update-strategy replace --debug --live-update" +
                " --local-path " + LOCAL_PATH +
                " --namespace " + NAMESPACE +
@@ -16,4 +16,4 @@ k8s_custom_deploy(
 )
 
 k8s_resource('tanzu-java-web-app-abhi', port_forwards=["8080:8080"],
-            extra_pod_selectors=[{'carto.run/workload-name': 'tanzu-java-web-app-abhi', 'app.kubernetes.io/component': 'run'}])
+            extra_pod_selectors=[{'carto.run/workload-name': 'tanzu-java-web-app-default', 'app.kubernetes.io/component': 'run'}])

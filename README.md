@@ -1,4 +1,4 @@
-# tanzu-java-web-app-abhi
+# tanzu-java-web-app-default
 
 This is a sample of a Java Spring app that works with Tilt and the Tanzu Application Platform.
 
@@ -22,7 +22,7 @@ This is specified by adding a `--local-path` option providing the path for the s
 You can set this as an environment variable before running any of the commands below using: 
 
 ```sh
-export SOURCE_IMAGE=registry.io/user/tanzu-java-web-app-abhi-source
+export SOURCE_IMAGE=registry.io/user/tanzu-java-web-app-default-source
 ```
 
 ## Deploying the sample for TAP
@@ -40,7 +40,7 @@ tanzu apps workload create tanzu-java-web-app-abhi \
 
 You can use the IDE plugins for VSCode or IntelliJ IDEA to enable live update. You can also use the command line following these steps.
 
-1. Set the environment variable mentioned above specifying the repository to use for the source image. This is where the local source code will be written. As an example, use `export SOURCE_IMAGE=registry.io/user/tanzu-java-web-app-abhi-source`.
+1. Set the environment variable mentioned above specifying the repository to use for the source image. This is where the local source code will be written. As an example, use `export SOURCE_IMAGE=registry.io/user/tanzu-java-web-app-default-source`.
 2. Start `Tilt` by running `tilt up`
     > If you see an "Update error" message like the one below, then just follow the instructions and allow that context:
         ```
