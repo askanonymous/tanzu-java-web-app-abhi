@@ -49,4 +49,5 @@ You can use the IDE plugins for VSCode or IntelliJ IDEA to enable live update. Y
             allow_k8s_contexts('tap-beta2')
         to your Tiltfile. Otherwise, switch k8s contexts and restart Tilt.
         ```
-3. You can hit the spacebar to open the Tilt UI in a browser. 
+3. You can hit the spacebar to open the Tilt UI in a browser.
+
